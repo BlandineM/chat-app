@@ -2,6 +2,7 @@ import React from 'react';
 import './Style.css';
 
 
+
 function Contact (props){
     return (
         <div className="Contact"> 
@@ -10,8 +11,8 @@ function Contact (props){
             <div className = "info">
                 <h3 className= 'name'>{props.name}</h3>
                 <div className = "status">
-                    <span className= {props.onLine? "status-online" : "status-offline"}></span>
-                    <p>{props.onLine? "On line" : "Off line"}</p>
+                    <span className= {props.online? "status-online" : "status-offline"}></span>
+                    <p>{props.online? "On line" : "Off line"}</p>
                 </div>
             </div>
        
